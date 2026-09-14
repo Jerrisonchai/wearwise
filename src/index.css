@@ -31,8 +31,85 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.font-display {
-  font-family: var(--font-display);
+/* ---------- Layout primitives ---------- */
+.container-w {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding-block: 6rem;
+}
+
+/* ---------- Typography ---------- */
+.font-display { font-family: var(--font-display); }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--color-primary);
+}
+
+.display-1 { font-family: var(--font-display); font-size: clamp(2.75rem, 7vw, 5.5rem); line-height: 1.02; font-weight: 500; }
+.display-2 { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3.25rem); line-height: 1.1; font-weight: 500; }
+.heading-3 { font-family: var(--font-display); font-size: clamp(1.4rem, 2.5vw, 1.9rem); line-height: 1.2; font-weight: 500; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-pill);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn-primary:hover { background-color: var(--color-primary-deep); transform: translateY(-1px); }
+.btn-ghost {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-ink);
+}
+.btn-ghost:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+/* ---------- Cards ---------- */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+/* ---------- Long-form body copy ---------- */
+.prose-w { color: var(--color-ink-soft); line-height: 1.75; font-size: 1.0625rem; }
+.prose-w p { margin-bottom: 1.25rem; }
+.prose-w strong { color: var(--color-ink); font-weight: 600; }
+
+/* ---------- Inputs ---------- */
+.field {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--color-ink);
+  width: 100%;
+}
+.field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(168, 124, 79, 0.15);
 }
 
 @media (prefers-reduced-motion: reduce) {
