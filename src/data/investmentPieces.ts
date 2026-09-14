@@ -29,6 +29,8 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Scrunch the fabric and release — quality wool smooths itself within minutes. Check the interior for finished seams and a proper waistband lining. That\u2019s where longevity lives.',
     imageQuery: 'tailored trousers hanging',
+    image: '/images/piece-trousers.jpg',
+    imageCredit: 'Photo: Wikimedia Commons — CC BY',
   },
   {
     title: 'The Blazer',
@@ -69,6 +71,7 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Check inside seams for bound or Hong Kong finishing that won\u2019t fray. Examine stitching at stress points — underarms, pocket corners, hem — for reinforcement. Hardware should be metal, never plastic.',
     imageQuery: 'wool coat outerwear',
+    image: '/images/piece-outerwear.jpg',
   },
   {
     title: 'The Dress',
@@ -88,5 +91,7 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Flex the shoe — quality leather bends smoothly without cracking. Check for a visible welt that signals resoleable construction. Use shoe trees, condition regularly, and rotate between pairs.',
     imageQuery: 'quality leather shoes',
+    image: '/images/piece-footwear.jpg',
+    imageCredit: 'Photo: Sobebunny — CC BY-SA 3.0',
   },
 ]

@@ -32,6 +32,8 @@ export const accessories: Accessory[] = [
       'A quality belt becomes more beautiful each year: the leather darkens and develops character, the buckle acquires a soft luster. Many makers offer lifetime repair, which tells you everything about expected longevity.',
     test: 'Bend the belt firmly — quality leather flexes without cracking or showing white stress marks. Look at the cross-section: you should see one consistent layer, not compressed layers.',
     imageQuery: 'full grain leather belt',
+    image: '/images/acc-belt.jpg',
+    imageCredit: 'Photo: Ajay Suresh — CC BY 2.0',
   },
   {
     title: 'The Silk Scarf',
@@ -42,6 +44,8 @@ export const accessories: Accessory[] = [
       'Quality silk develops a more beautiful hand with wear, and its colours remain remarkably stable. Vintage scarves are actively collected, with certain prints commanding prices far above their original retail.',
     test: 'Hold it to the light for a consistent weave. Quality silk feels cool and liquid, not papery. Stored rolled and away from light, a silk scarf lasts generations.',
     imageQuery: 'silk scarf draped',
+    image: '/images/acc-scarf.jpg',
+    imageCredit: 'Photo: Aniinna — CC BY-SA 4.0',
   },
   {
     title: 'Timeless Jewelry',
@@ -63,6 +67,7 @@ export const accessories: Accessory[] = [
       'Acetate develops warmth and depth over years, while cheap plastic yellows and cracks. Quality sunglasses can be adjusted and have their lenses replaced, evolving with you.',
     test: 'Temples should move smoothly with gentle resistance. Look through the lenses at a straight line — any distortion reveals low-quality optics.',
     imageQuery: 'acetate sunglasses',
+    image: '/images/acc-sunglasses.jpg',
   },
   {
     title: 'The Overnight Bag',
@@ -73,5 +78,6 @@ export const accessories: Accessory[] = [
       'A quality travel bag tells your story — worn corners, darkened handles, canvas softened from stiff to supple. These bags are handed down through families and can be repaired indefinitely.',
     test: 'Check the weight and weave of the canvas, and inspect the stress points for reinforcement. Hardware should be solid and securely attached.',
     imageQuery: 'canvas overnight bag',
+    image: '/images/acc-bag.jpg',
   },
 ]
