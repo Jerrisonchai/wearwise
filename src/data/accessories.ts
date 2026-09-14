@@ -7,6 +7,8 @@ export interface Accessory {
   appreciation: string
   test: string
   imageQuery: string
+  image?: string
+  imageCredit?: string
 }
 
 export const accessories: Accessory[] = [
@@ -19,6 +21,7 @@ export const accessories: Accessory[] = [
       'Quality leather, conditioned regularly, becomes more supple and luminous each year. The structure holds its shape when stored stuffed and upright, and certain heritage bags resell for more than their original price after years of use.',
     test: 'Quality leather has a rich, natural scent, not a chemical one. Press a thumbnail into an inconspicuous spot — the mark should fade. Check the lining: stitched linings can be replaced; glued linings peel and can\u2019t.',
     imageQuery: 'structured leather handbag',
+    image: '/images/acc-handbag.jpg',
   },
   {
     title: 'The Leather Belt',
@@ -49,6 +52,7 @@ export const accessories: Accessory[] = [
       'Quality jewelry exists on a timeline measured in generations, developing the "vintage glow" that only time can create. It\u2019s defined by craftsmanship, not stone size or brand.',
     test: 'Surfaces should be uniformly smooth or evenly textured — rough spots predict premature wear. Check the clasp and settings for solid, secure construction.',
     imageQuery: 'gold jewelry craftsmanship',
+    image: '/images/acc-jewelry.jpg',
   },
   {
     title: 'Quality Sunglasses',

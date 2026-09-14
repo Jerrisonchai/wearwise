@@ -23,6 +23,21 @@ export default function AccessoriesSection() {
         >
           {accessories.map((a, i) => (
             <motion.article key={a.title} variants={fadeUp} className="card p-7 flex flex-col">
+              {a.image && (
+                <div className="mb-4 overflow-hidden rounded-lg">
+                  <img
+                    src={a.image}
+                    alt={a.title}
+                    loading="lazy"
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                  {a.imageCredit && (
+                    <p className="text-[10px] leading-snug text-ink-soft mt-1.5">
+                      {a.imageCredit}
+                    </p>
+                  )}
+                </div>
+              )}
               <span className="font-display text-4xl text-primary/25 leading-none">
                 {String(i + 1).padStart(2, '0')}
               </span>

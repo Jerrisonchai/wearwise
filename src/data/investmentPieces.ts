@@ -6,6 +6,8 @@ export interface InvestmentPiece {
   makesItLast: string
   qualityTest: string
   imageQuery: string
+  image?: string
+  imageCredit?: string
 }
 
 export const investmentPieces: InvestmentPiece[] = [
@@ -17,6 +19,7 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Hold it to the light — you should see a consistent, tight weave with no thin spots. Pull gently on a seam: it should have zero give. Check that buttons are cross-stitched (an X pattern) rather than parallel-stitched.',
     imageQuery: 'white button down shirt folded',
+    image: '/images/piece-shirt.jpg',
   },
   {
     title: 'Tailored Trousers',
@@ -35,6 +38,7 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Pinch the lapel and gently separate the layers. In a canvassed blazer the interlining moves independently; in a fused one, the layers are glued and won\u2019t separate. This single test says more about longevity than the price tag.',
     imageQuery: 'tailored blazer on hanger',
+    image: '/images/piece-blazer.jpg',
   },
   {
     title: 'Denim',
@@ -44,6 +48,7 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Quality denim feels substantial and slightly stiff when new. Check the selvedge edge on the outseam and examine the rivets — copper and brass patina beautifully, while painted base metal chips and corrodes.',
     imageQuery: 'raw denim jeans texture',
+    image: '/images/piece-denim.jpg',
   },
   {
     title: 'Cashmere',
@@ -53,6 +58,8 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Stretch the fabric gently — quality cashmere snaps back immediately. Hold it to the light for consistent density, then rub the surface: if fibres shed straight away, the staple length is too short.',
     imageQuery: 'folded cashmere sweaters',
+    image: '/images/piece-cashmere.jpg',
+    imageCredit: 'Photo: Adrianrowe — CC BY-SA 4.0',
   },
   {
     title: 'Outerwear',
@@ -71,6 +78,7 @@ export const investmentPieces: InvestmentPiece[] = [
     qualityTest:
       'Turn it inside out. Are the seams pressed open and finished? Is there interfacing at the neckline? Are hems blind-stitched rather than machine-topstitched? Is there enough allowance (1.5cm+) for future alterations?',
     imageQuery: 'elegant dress on hanger',
+    image: '/images/piece-dress.jpg',
   },
   {
     title: 'Footwear',

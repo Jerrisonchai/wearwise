@@ -27,6 +27,21 @@ export default function PiecesSection() {
               variants={fadeUp}
               className="card p-8 flex flex-col"
             >
+              {p.image && (
+                <div className="mb-5 overflow-hidden rounded-lg">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    loading="lazy"
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                  {p.imageCredit && (
+                    <p className="text-[10px] leading-snug text-ink-soft mt-1.5">
+                      {p.imageCredit}
+                    </p>
+                  )}
+                </div>
+              )}
               <span className="font-display text-5xl text-primary/25 leading-none">
                 {String(i + 1).padStart(2, '0')}
               </span>
