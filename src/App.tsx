@@ -3,6 +3,8 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import ChapterRail from './components/ChapterRail'
 import MindsetSection from './sections/MindsetSection'
+import QualitySection from './sections/QualitySection'
+import TrendsSection from './sections/TrendsSection'
 import Footer from './components/Footer'
 import { chapters } from './data/chapters'
 
@@ -30,10 +32,10 @@ export default function App() {
       <Hero />
       <ChapterRail />
       <MindsetSection />
-      <Placeholder id="quality" />
+      <QualitySection />
       <Placeholder id="pieces" />
       <Placeholder id="accessories" />
-      <Placeholder id="trends" />
+      <TrendsSection />
       <Footer />
     </div>
   )
